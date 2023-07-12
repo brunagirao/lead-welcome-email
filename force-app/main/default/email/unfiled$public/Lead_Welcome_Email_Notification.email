@@ -1,0 +1,25 @@
+<html>
+<head>
+	<title>Congratulations</title>
+</head>
+<body style="height: auto; min-height: auto;">
+<h3>Congratulations,&nbsp;</h3>
+&nbsp;
+
+<p>You are a new Lead in our plataform.</p>
+
+<p>Follow your informations:</p>
+
+<ul>
+	<li>Name:&nbsp;&nbsp;{{{Recipient.Name}}}</li>
+	<li>Company:&nbsp;{{{Recipient.Company}}}</li>
+	<li>Lead Source:&nbsp;{{{Recipient.LeadSource}}}</li>
+	<li>Industry:&nbsp;{{{Recipient.Industry}}}</li>
+</ul>
+
+<p>Best Regard!</p>
+
+<p>Salesforce Team<br />
+&nbsp;</p>
+</body>
+</html>
