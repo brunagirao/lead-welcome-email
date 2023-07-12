@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>NeedSendWelcomeMessage__c</fullName>
+    <externalId>false</externalId>
+    <formula>AND (
+ISPICKVAL(Rating, &apos;Hot&apos;),
+ISPICKVAL(Status, &apos;Open - Not Contacted&apos;) 
+)</formula>
+    <label>Need Send Welcome Message</label>
+    <type>Checkbox</type>
+</CustomField>
