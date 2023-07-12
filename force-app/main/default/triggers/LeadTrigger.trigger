@@ -11,5 +11,5 @@ Date                Modified By             Description
 ***************************************************************************************************/
 trigger LeadTrigger on Lead (after insert) {
     System.debug('======= LeadTrigger ========');
-    new LeadTriggerHandler.run();
+    new LeadTriggerHandler().run();
 }
