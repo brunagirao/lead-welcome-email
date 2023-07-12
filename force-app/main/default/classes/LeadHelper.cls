@@ -10,5 +10,19 @@ Date                Modified By             Description
 12-07-2023         Bruna Girão             create class 
 ***************************************************************************************************/
 public with sharing class LeadHelper {
+    
+    public static void sendWelcomeEmailMessage(List<Lead> newRecords) {
+        System.debug('sendWelcomeEmailMessage');
+        List<Lead> leadsToNotify = new List<Lead>();
 
+        for(Lead ld : newRecords) {
+            if(ld.NeedSendWelcomeMessage__c) {
+                leadsToNotify.add(ld);
+                System.debug('ld => ' + ld);
+            }
+            
+        }
+        System.debug('leadsToNotify => ' + leadsToNotify.size());
+        EmailNotificationService.sendEmailNotificationLead(leadsToNotify, System.label.LEAD_WELCOME_EMAIL_NOTIFICATION);
+    }
 }
