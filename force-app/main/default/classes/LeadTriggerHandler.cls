@@ -13,6 +13,7 @@ public with sharing class LeadTriggerHandler extends TriggerHandler {
 
     public override void afterInsert() {
         System.debug('========== AFTER INSERT =========');
+        LeadHelper.sendWelcomeEmailMessage((List<Lead>) Trigger.new);
     }
 
     /*  
