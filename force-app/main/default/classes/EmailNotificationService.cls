@@ -7,7 +7,8 @@
 --------------------------------------------------------------------------------------------------
 Date                Modified By             Description
 --------------------------------------------------------------------------------------------------
-12-07-2023         Bruna Girão             create class 
+12-07-2023         Bruna Girão             create class and sendEmailNotificationLead() method
+13-07-2023         Bruna Girão             fix problem with Email Template merged fields
 ***************************************************************************************************/
 public with sharing class EmailNotificationService {
     
@@ -27,12 +28,9 @@ public with sharing class EmailNotificationService {
                                    LIMIT 1];
         
         for(Lead ld : leads) {
-            System.debug('ld => ' + ld.Id);
+
             mail = new Messaging.SingleEmailMessage();
             mail.setTemplateId(template.Id);
-            mail.setToAddresses(new List<String>{ld.Email});
-            mail.setSubject(template.Subject);
-            mail.setHTMLBody(template.HtmlValue);
             mail.setTargetObjectId(ld.Id);
 
             attach = new Messaging.EmailFileAttachment();
