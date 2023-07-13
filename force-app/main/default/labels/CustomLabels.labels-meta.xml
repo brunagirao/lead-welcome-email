@@ -7,4 +7,25 @@
         <shortDescription>LEAD WELCOME EMAIL NOTIFICATION TEMPLATE NAME</shortDescription>
         <value>Lead_Welcome_Email_Notification</value>
     </labels>
+    <labels>
+        <fullName>LEAD_WELCOME_EMAIL_NOTIFICATION_TEMPLATE_PDF</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>LEAD WELCOME EMAIL NOTIFICATION_TEMPLATE_PDF</shortDescription>
+        <value>&lt;h3&gt;Hey {0},&lt;/h3&gt;
+&lt;br&gt;
+
+&lt;p&gt;Thanks for signing up to Salesforce platform!&lt;/p&gt;
+
+&lt;p&gt;My name is {1}, and I’m your point-of-contact for getting up-and-running using the tool. &lt;/p&gt;
+&lt;p&gt;Over the next few weeks, I’ll be sending you a few more emails to help you.&lt;/p&gt;
+&lt;br&gt;
+
+&lt;p&gt;Looking forward to hearing from you soon!&lt;/p&gt;
+&lt;br&gt;
+
+&lt;p&gt;Regards,&lt;/p&gt;
+
+&lt;p&gt;{2}&lt;/p&gt;</value>
+    </labels>
 </CustomLabels>
