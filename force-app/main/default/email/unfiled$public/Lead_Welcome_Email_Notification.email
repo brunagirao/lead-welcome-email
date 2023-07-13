@@ -3,7 +3,7 @@
 	<title>Congratulations</title>
 </head>
 <body style="height: auto; min-height: auto;">
-<h3>Congratulations,&nbsp;</h3>
+<h3>Congratulations,&nbsp;{{{Recipient.Company}}}!</h3>
 &nbsp;
 
 <p>You are a new Lead in our plataform.</p>
