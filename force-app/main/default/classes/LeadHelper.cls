@@ -8,6 +8,7 @@
 Date                Modified By             Description
 --------------------------------------------------------------------------------------------------
 12-07-2023         Bruna Girão             create class 
+13-07-2023         Bruna Girão             update Custom Label
 ***************************************************************************************************/
 public with sharing class LeadHelper {
     
