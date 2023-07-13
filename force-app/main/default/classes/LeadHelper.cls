@@ -23,6 +23,6 @@ public with sharing class LeadHelper {
             
         }
         System.debug('leadsToNotify => ' + leadsToNotify.size());
-        EmailNotificationService.sendEmailNotificationLead(leadsToNotify, System.label.LEAD_WELCOME_EMAIL_NOTIFICATION);
+        EmailNotificationService.sendEmailNotificationLead(leadsToNotify, System.Label.LEAD_WELCOME_EMAIL_NOTIFICATION_TEMPLATE_NAME);
     }
 }
